@@ -7,6 +7,7 @@ package com.jpm1590.sga.cliente;
 
 import com.jpm1590.sga.servicio.PersonaServiceRemote;
 import com.jpm1590.sga.domain.Persona;
+
 import java.util.List;
 import javax.naming.Context;
 import javax.naming.InitialContext;

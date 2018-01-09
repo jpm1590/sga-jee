@@ -5,9 +5,10 @@
  */
 package com.jpm1590.sga.servicio;
 
+import com.jpm1590.sga.domain.Persona;
+
 import java.util.List;
 import javax.ejb.Remote;
-import com.jpm1590.sga.domain.Persona;
 
 /**
  *
