@@ -43,6 +43,5 @@ public class ClientePersonaServiceConIP {
         } catch (NamingException ex) {
             ex.printStackTrace();
         }
-
     }
 }
