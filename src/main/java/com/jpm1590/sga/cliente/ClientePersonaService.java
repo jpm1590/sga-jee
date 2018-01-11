@@ -18,17 +18,18 @@ import javax.naming.NamingException;
  * @author jpm1590
  */
 public class ClientePersonaService {
-    
-    public static void main(String[] args){
-        
+
+    public static void main(String[] args) {
+
         System.out.println("Iniciando llamada a EJB desde cliente");
-        try {            
+        try {
             Context jndi = new InitialContext();
             PersonaServiceRemote personaService = (PersonaServiceRemote) 
                     jndi.lookup("java:global/sga-jee/PersonaServiceImpl!com.jpm1590.sga.servicio.PersonaServiceRemote");
+
             List<Persona> personas = personaService.listarPersonas();
-            
-            for(Persona persona: personas){
+
+            for (Persona persona : personas) {
                 System.out.println(persona);
             }
             System.out.println("Fin llamada a EJB desde cliente");
@@ -36,5 +37,5 @@ public class ClientePersonaService {
             ex.printStackTrace();
         }
     }
-    
+
 }

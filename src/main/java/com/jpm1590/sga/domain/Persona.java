@@ -12,7 +12,7 @@ import java.io.Serializable;
  * @author jpm1590
  */
 public class Persona implements Serializable {
-    
+
     private static final long serialVersionUID = 1L;
     private int idPersona;
     private String nombre;
@@ -24,7 +24,9 @@ public class Persona implements Serializable {
     public Persona() {
     }
 
-    public Persona(int idPersona, String nombre, String apePaterno, String apeMaterno, String email, String telefono) {
+    public Persona(int idPersona, String nombre, String apePaterno,
+            String apeMaterno, String email, String telefono) {
+        
         this.idPersona = idPersona;
         this.nombre = nombre;
         this.apePaterno = apePaterno;
@@ -79,10 +81,12 @@ public class Persona implements Serializable {
 
     public void setTelefono(String telefono) {
         this.telefono = telefono;
-    }    
-    
+    }
+
     @Override
     public String toString() {
-        return "Persona{" + "idPersona=" + idPersona + ", nombre=" + nombre + ", apePaterno=" + apePaterno + ", apeMaterno=" + apeMaterno + ", email=" + email + ", telefono=" + telefono + '}';
+        return "Persona{" + "idPersona=" + idPersona + ", nombre=" + nombre 
+                + ", apePaterno=" + apePaterno + ", apeMaterno=" + apeMaterno 
+                + ", email=" + email + ", telefono=" + telefono + '}';
     }
 }

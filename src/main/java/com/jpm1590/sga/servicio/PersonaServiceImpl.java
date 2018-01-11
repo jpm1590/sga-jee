@@ -9,11 +9,13 @@ import com.jpm1590.sga.domain.Persona;
 
 import java.util.ArrayList;
 import java.util.List;
+import javax.ejb.Stateless;
 
 /**
  *
  * @author olimpica
  */
+@Stateless
 public class PersonaServiceImpl implements PersonaServiceRemote {
 
     @Override
